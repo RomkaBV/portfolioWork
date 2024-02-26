@@ -48,13 +48,24 @@ body {
   font-weight: 800;
   src: url("./styles/fonts/Satoshi-Bold.woff2");
 }
-.custom-container {
-  max-width: 1280px;
-  margin: 0 auto;
+@media (min-width: 1200px) {
+  .custom-container {
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 /** Home page */
 .hero-bg {
-  background-color: red;
   background: url(../public/hero-bg-pattern.svg);
   background-size: cover;
   background-position: center center;

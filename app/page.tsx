@@ -10,7 +10,7 @@ import TheContact from "./Home/TheContact";
 export default function Home() {
   return (
     <main className="!overflow-hidden">
-      <div className=" absolute right-0 top-0 h-full w-[80%] z-[-10]">
+      <div className=" absolute right-0 top-0 h-full w-[80%] z-[10]">
         <Particle />
       </div>
       <TheHero />

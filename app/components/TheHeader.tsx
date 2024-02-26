@@ -8,13 +8,13 @@ export default function TheHeader() {
 
   return (
     <header className=" font-headerFont w-full -mb-24 top-0 left-0 relative z-[999]">
-      <div className="flex items-center justify-between bg-transparent lg:max-w-[1280px] mx-auto py-4 px-5">
+      <div className="flex items-center justify-between py-4 md:px-10 max-w-[1210px] mx-auto px-7 ">
         <div className="">
           <Link href="./">
             <Image
-              className="w-32 md:w-56"
+              className="md:w-52 w-32"
               src="/hero-logo.png"
-              alt="Hero logo"
+              alt="hoobank"
               width={226}
               height={54}
             />
@@ -49,12 +49,12 @@ export default function TheHeader() {
         <nav className="hidden md:flex justify-between ">
           <ul className="inline-flex  items-center gap-8 font-bodyFontSatoshi">
             <li>
-              <Link href="./about" className="">
+              <Link href="./about" className="whitespace-nowrap">
                 About us
               </Link>
             </li>
             <li>
-              <Link href="./how_works" className="">
+              <Link href="./how_works" className="whitespace-nowrap">
                 How it work
               </Link>
             </li>
@@ -64,7 +64,7 @@ export default function TheHeader() {
               </Link>
             </li>
             <li>
-              <Link href="./log" className="">
+              <Link href="./log" className="whitespace-nowrap">
                 Log In
               </Link>
             </li>
@@ -73,7 +73,9 @@ export default function TheHeader() {
             href="./sign"
             className="active:scale-y-110  inline-flex  items-center  overflow-hidden px-6 py-2 ml-5  font-bodyFontSatoshi md:bg-transparent border-solid border-2 border-red-700 rounded-xl md:hover:bg-red-700 "
           >
-            <span className=" font-headerBoldFont">Sign Up</span>
+            <span className=" font-headerBoldFont whitespace-nowrap">
+              Sign Up
+            </span>
           </Link>
         </nav>
         <div className="md:hidden">

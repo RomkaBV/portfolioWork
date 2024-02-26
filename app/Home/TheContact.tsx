@@ -5,16 +5,17 @@ import { AiOutlineMail } from "react-icons/ai";
 
 export default function TheContact() {
   return (
-    <div className="relative  pt-20 pb-20">
-      <div className=" absolute contact-bg  top-0  w-full h-full z-[-30]"></div>
+    <section className=" contact-bg py-20 relative z-50">
       <div className="bg-gradient-to-b from-[#140E18]  to-[#140E1800] absolute top-0  w-full h-[200px] z-[-20]"></div>
       <div className="bg-gradient-to-t from-[#140E18]  to-[#140E1800] absolute bottom-0 bg-opacity-70 w-full h-[200px] z-[-20]"></div>
-      <section className=" w-full max-w-[1280px] m-auto flex flex-col relative">
-        <div className="text-center">
-          <h2 className=" font-heroFont text-5.5xl  mt-8">
+      <div className=" custom-container flex flex-col justify-center relative z-10 ">
+        <div className="text-center pb-20">
+          <h2 className=" font-heroFont text-center lg:text-5.5xl md:text-4.4xl text-2xl text-white mb-4">
             <span className="gradient-text">Contact</span> Us
           </h2>
-          <p className=" text-lg mt-5">Let us know what you think.</p>
+          <p className="text-xl font-normal text-white w-1/2 mx-auto">
+            Let us know what you think.
+          </p>
         </div>
         <form
           className=" flex flex-col justify-center items-center gap-8 mt-8 max-w-[560px] m-auto"
@@ -84,7 +85,7 @@ export default function TheContact() {
             Send Message
           </button>
         </form>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function ThePossible() {
   return (
-    <div className="possible-bg relative z-[-999]">
+    <section className="possible-bg relative z-[-999]">
       <div className="bg-gradient-to-b from-[#140E18]  to-[#140E1800] absolute top-0  w-full h-[200px]"></div>
       <div className="bg-gradient-to-t from-[#140E18]  to-[#140E1800] absolute bottom-0 bg-opacity-70 w-full h-[200px]"></div>
-      <section
-        className="custom-container  mt-[-2]   text-white md:py-10 py-12 relative w-screen h-screen "
+      <div
+        className="custom-container text-white md:py-28 py-12 relative z-50"
         id="Offer"
       >
-        <h2 className="font-heroFont text-5.5xl text-center	mb-4">
+        <h2 className="font-heroFont  text-center lg:text-5.5xl md:text-4.4xl text-2xl mb-12">
           What’s <span className="gradient-text ">Possible</span>
         </h2>
         <div className=" ">
@@ -131,7 +131,7 @@ export default function ThePossible() {
             </li>
           </ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

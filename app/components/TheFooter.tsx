@@ -2,29 +2,27 @@ import Link from "next/link";
 import Image from "next/image";
 export const TheFooter = () => {
   return (
-    <footer className="mb-10 max-w-[1280px] mx-auto px-5">
-      <div className="flex items-center justify-between bg-transparent  py-4 px-5 border-b-2">
-        <div className="">
-          <Link href="./">
-            <Image
-              className="w-32 md:w-56"
-              src="/hero-logo.png"
-              alt="Hero logo"
-              width={226}
-              height={54}
-            />
-          </Link>
-        </div>
+    <footer className="custom-container mt-14 overflow-x-hidden z-50 relative">
+      <div className="flex justify-center md:justify-between gap-6 border-b border-paraColor pb-4 md:pb-0 tablet:border-0 items-center flex-col md:flex-row">
+        <Link href="./">
+          <Image
+            className="w-40 "
+            src="/hero-logo.png"
+            alt="Hero logo"
+            width={226}
+            height={54}
+          />
+        </Link>
 
-        <nav className="hidden md:flex justify-between ">
-          <ul className="inline-flex  items-center gap-8 font-bodyFontSatoshi">
+        <nav className="flex justify-between md:gap-6 lg:gap-8 ">
+          <ul className="inline-flex  items-center gap-2 font-bodyFontSatoshi md:gap-8">
             <li>
               <Link href="./about" className="">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="./how_works" className="">
+              <Link href="./how_works" className="whitespace-nowrap">
                 How it work
               </Link>
             </li>
@@ -39,14 +37,14 @@ export const TheFooter = () => {
               </Link>
             </li>
             <li>
-              <Link href="./log" className="">
+              <Link href="./log" className="whitespace-nowrap">
                 About Us
               </Link>
             </li>
           </ul>
         </nav>
       </div>
-      <div className="mt-6 flex justify-between">
+      <div className="flex justify-between items-center my-8 flex-col md:flex-row gap-2">
         <div>
           <p>Copyright 2023. All rights reserved by Animade</p>
         </div>
