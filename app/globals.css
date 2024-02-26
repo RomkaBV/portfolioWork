@@ -17,17 +17,221 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #fff;
+  background-color: #140e18;
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+@font-face {
+  font-family: "Switzer";
+  font-weight: 800;
+  src: url("./styles/fonts/switzer-bold-webfont.woff2");
+}
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 500;
+  src: url("./styles/fonts/Satoshi-Medium.woff2");
+}
+@font-face {
+  font-family: "Satoshi_Bold";
+  font-weight: 800;
+  src: url("./styles/fonts/Satoshi-Bold.woff2");
+}
+.custom-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/** Home page */
+.hero-bg {
+  background-color: red;
+  background: url(../public/hero-bg-pattern.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero-bg:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c70025;
+  opacity: 0.3;
+  mix-blend-mode: soft-light;
+  z-index: -1;
+}
+/** Header text */
+.gradient-text {
+  display: inline;
+  background: linear-gradient(91deg, #c70025 20.28%, #f8ba53 85.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+.gradient-text2 {
+  background: linear-gradient(91deg, #c70025 0.74%, #f8ba53 65.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+/* Hero image Animation */
+.animte-float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+
+  50% {
+    transform: translatey(-30px);
+  }
+
+  to {
+    transform: translatey(0);
+  }
+}
+.scroll-down {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1280px) {
+  .custom-container {
+    max-width: 100%;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+}
+
+/* * ThePosible block*/
+.gradient-text {
+  background: linear-gradient(91deg, #c70025 20.28%, #f8ba53 85.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+
+.gradient-text2 {
+  background: linear-gradient(91deg, #c70025 0.74%, #f8ba53 65.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+.bg-secondary {
+  background-color: rgba(46, 41, 49, 0.9);
+}
+
+.border-secondary {
+  border-color: rgba(62, 57, 66, 1);
+}
+.possible-bg {
+  background: url(../public/possible-WhatweDo.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.possible-bg:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -2;
+  left: 0;
+  background-color: #140e18;
+  opacity: 0.3;
+  mix-blend-mode: soft-light;
+  z-index: -1;
+}
+/** Potencial bg */
+.potential_bg {
+  position: relative;
+  background: url(../public/potential-bg.png);
+  background-position: center center;
+  background-size: cover;
+}
+/** No hidden-bg*/
+
+.hidden-fee-bg {
+  background: url(../public/no-hidden-fee-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/** No hidden-bg*/
+
+.mission-bg {
+  background: url(../public/missing-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/** contact-bg*/
+.contact-bg {
+  background: url(../public/home-contact-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/** New page About us bg*/
+.about-bg {
+  background-color: red;
+  background: url(../public/hero-bg-pattern.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.about-bg:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -2;
+  left: 0;
+  transform: translate(0%, -100%);
+  background-color: #c70025;
+  opacity: 0.3;
+  mix-blend-mode: soft-light;
+  z-index: -1;
+}
+
+/* * Pricing-bg */
+.pricing-bg {
+  background-color: red;
+  background: url(../public/bgPricing.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-bg-mano {
+  background: url(../public/works-hero.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
