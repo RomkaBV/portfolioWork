@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ThePotencial() {
   return (
-    <div className="potential_bg">
+    <div className="potential_bg mt-40">
       <section className="lg:mx-auto  px-5 max-w-[1280px] ">
         <div className="">
           <h2 className=" text-center font-heroFont text-5.5xl">
