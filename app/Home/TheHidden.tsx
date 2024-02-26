@@ -40,15 +40,19 @@ export default function TheHidden() {
                 as you earn.
               </p>
               <div className="flex gap-6">
-                <div className=" mt-28 flex flex-col w-60 h-36  bg-[#2A3B41] justify-center pl-8 rounded-xl">
-                  <h6 className=" font-heroFont font-medium text-6xl ">3%</h6>
-                  <p className=" font-headerFont font-bold text-base text-[#676C6E] uppercase">
+                <div className=" mt-28 flex flex-col md:w-60 w-40 md:h-36 h-24  bg-[#2A3B41] justify-center pl-8 rounded-xl">
+                  <h6 className=" font-heroFont font-medium md:text-6xl text-4.4xl ">
+                    3%
+                  </h6>
+                  <p className=" font-headerFont font-bold md:text-base text-sm text-[#676C6E] uppercase">
                     Of Initial NFT Sale
                   </p>
                 </div>
-                <div className=" mt-28 flex flex-col w-60 h-36  bg-[#2A3B41] justify-center pl-8 rounded-xl">
-                  <h6 className=" font-heroFont font-medium text-6xl ">1%</h6>
-                  <p className=" font-headerFont font-bold text-base text-[#676C6E] uppercase">
+                <div className=" mt-28 flex flex-col md:w-60 w-40 md:h-36 h-24  bg-[#2A3B41] justify-center pl-8 rounded-xl">
+                  <h6 className=" font-heroFont font-medium md:text-6xl text-4.4xl  ">
+                    1%
+                  </h6>
+                  <p className=" font-headerFont font-bold md:text-base text-sm text-[#676C6E] uppercase">
                     Of NFT Royalty
                   </p>
                 </div>
@@ -75,9 +79,11 @@ export default function TheHidden() {
                 We take payments daily as a percentage of sales - so you pay us
                 as you earn.
               </p>
-              <div className=" mt-40 flex flex-col w-60 h-36  bg-[#2A3B41] justify-center pl-8 rounded-xl">
-                <h6 className=" font-heroFont font-medium text-6xl ">3%</h6>
-                <p className=" font-headerFont font-bold text-base text-[#676C6E] uppercase">
+              <div className=" mt-40 flex flex-col md:w-60 w-40 md:h-36 h-24  bg-[#2A3B41] justify-center pl-8 rounded-xl">
+                <h6 className=" font-heroFont font-medium md:text-6xl text-4.4xl ">
+                  3%
+                </h6>
+                <p className=" font-headerFont font-bold md:text-base text-sm text-[#676C6E] uppercase">
                   of sales
                 </p>
               </div>
