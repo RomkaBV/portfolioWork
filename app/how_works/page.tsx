@@ -13,11 +13,11 @@ export default function How_Works() {
   }, []);
   return (
     <section className="px-5 hero-bg  lg:h-screen  w-screen   relative ">
-      <div className=" absolute right-0 top-0 h-full w-[80%] z-[-10]">
+      <div className=" absolute right-0 top-0 h-full w-[100%] z-[-10]">
         <Particle />
       </div>
-      <div className="bg-gradient-to-b from-[#140E18]  to-[#140E1800] absolute top-0  w-full h-[200px] z-[20]"></div>
-      <div className="bg-gradient-to-t from-[#140E18]  to-[#140E1800] absolute bottom-0 bg-opacity-70 w-full h-[200px] z-[20]"></div>
+      <div className="bg-gradient-to-b from-[#140E18]  to-[#140E1800] absolute top-0 left-0 w-full h-[200px] z-[20]"></div>
+      <div className="bg-gradient-to-t from-[#140E18]  to-[#140E1800] absolute bottom-0 left-0 bg-opacity-70 w-full h-[200px] z-[20]"></div>
       <div className="max-w-[1280px] m-auto h-full flex items-center">
         <div className="">
           <Image
@@ -43,7 +43,7 @@ export default function How_Works() {
           />
         </div>
         <div
-          className="mt-0 lg:w-1/2 w-full h-full flex  md:pt-20 pt-0  items-start md:items-center lg:items-start flex-col  lg:justify-center relative z-[999] "
+          className="mt-0  lg:w-1/2 w-full h-full flex  md:pt-20 pt-0  items-start md:items-center lg:items-start flex-col  lg:justify-center relative z-[30] "
           data-aos="fade-right"
           data-aos-delay="2000"
         >
