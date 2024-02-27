@@ -246,3 +246,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}

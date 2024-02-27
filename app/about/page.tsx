@@ -1,51 +1,64 @@
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Particle from "../components/Particle";
 import Image from "next/image";
 import TheOurMission from "./TheOurMission";
 import TheTeam from "./TheTeam";
 export default function Page() {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     <>
-      <section className="bg-gradient-to-t from-[#140E18]  to-[#140E1800]">
-        <div className=" absolute right-0 top-0 h-full w-[80%] z-[-10]">
-          <Particle />
-        </div>
-        <div className=" pt-36 about-bg relative  ">
-          <Image
-            className=" absolute top-[-20%] left-[10%] w-1/3"
-            src="/red-circle.png"
-            alt="red-circle"
-            width={330}
-            height={330}
-          />
+      <section className="about-bg ">
+        <div className="bg-gradient-to-t from-[#140E18]  to-[#140E1800]">
+          <div className="custom-container  h-full flex flex-row justify-between relative z-50 items-center pt-36 ">
+            <Image
+              className="absolute top-0 left-0 w-1/2"
+              src="/red-circle.png"
+              alt=""
+              width={330}
+              height={330}
+            />
 
+            <Image
+              className="  absolute -bottom-[10%] left-[15%] w-2/3"
+              src="/white-cricle.png"
+              alt="circle"
+              width={300}
+              height={300}
+            />
+            <div className="text-center w-full flex flex-col justify-center items-center">
+              <div
+                className="lg:w-[750px] w-full mb-8 aos-init aos-animate"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <h1 className="font-heroFont text-white   xl:text-5.5xl  lg:leading-[1.2] md:text-4.4xl text-2xl text-center leading-tight mb-4">
+                  <span className="gradient-text">Animade </span>
+                  is <span className="gradient-text">Designed </span>
+                  to <span className="gradient-text">Simplify </span>
+                  the <span className="gradient-text">Process</span>
+                </h1>
+              </div>
+
+              <p className="text-lg font-medium text-center">
+                We’re proud to provide the tools and resources that AI Artists
+                and Entrepreneurs need to <br />
+                thrive in a rapidly-evolving digital.
+              </p>
+            </div>
+          </div>
           <Image
-            className=" absolute bottom-[-50%] left-[15%] w-2/3"
-            src="/white-cricle.png"
-            alt="circle"
-            width={300}
-            height={300}
-          />
-          <Image
-            className="absolute right-0 bottom-[-40%] w-1/2 "
+            className="absolute right-0 top-[-15%] w-1/2 "
             src="/yellow-circle.png"
             alt="yellow-circle"
             width={330}
             height={330}
           />
-          <h1 className="font-heroFont  text-5.5xl text-center">
-            <span className="gradient-text">Animade </span>
-            is <span className="gradient-text">Designed </span>
-            to <br /> <span className="gradient-text">Simplify</span> the
-            <span className="gradient-text">Process</span>
-          </h1>
-        </div>
-
-        <div className="overflow-hidden max-w-[1280px] px-5 m-auto bg-gradient-to-t from-[#140E18]  to-[#140E1800] ">
-          <p className="text-center">
-            We’re proud to provide the tools and resources that AI Artists and
-            Entrepreneurs need to <br />
-            thrive in a rapidly-evolving digital.
-          </p>
         </div>
       </section>
       <div className="flex justify-center mt-5">
@@ -59,6 +72,9 @@ export default function Page() {
       </div>
       <TheOurMission />
       <TheTeam />
+      <div className=" absolute right-0 top-0 h-full w-[80%] z-[-10]">
+        <Particle />
+      </div>
     </>
   );
 }
