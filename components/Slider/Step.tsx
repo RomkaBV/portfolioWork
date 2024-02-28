@@ -2,7 +2,11 @@
 
 import React from "react";
 
-const steps = [
+interface StepProps {
+  currentIndex: number;
+}
+
+const steps: string[] = [
   "Sign Up/ Create Account",
   "Enter Prompts",
   "Choose your Products and add descriptions",
@@ -10,7 +14,7 @@ const steps = [
   "Launch Products to your store",
 ];
 
-const Step = ({ currentIndex }) => {
+const Step: React.FC<StepProps> = ({ currentIndex }) => {
   return (
     <div className="steps-container w-36">
       {steps.map((step, index) => {
@@ -23,7 +27,7 @@ const Step = ({ currentIndex }) => {
           >
             <div className="bg-[#2E2931] text-white rounded-full">
               <h2
-                className=" px-3  py-1"
+                className="px-3 py-1"
                 style={{
                   margin: 0,
                   color: color,

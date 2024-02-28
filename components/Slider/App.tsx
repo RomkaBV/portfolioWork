@@ -1,22 +1,22 @@
 "use client";
 import { useState } from "react";
-import Step from "./Step.js";
-import Slider from "./Slider/page.js";
-import Form from "./Form/page.js";
+import Step from "./Step";
+import Slider from "./Slider/page";
+import Form from "./Form/page";
 import "./styles.css";
 
-export default function App() {
+export default function App(): JSX.Element {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const _handleIndexChange = (index) => {
+  const _handleIndexChange = (index: number): void => {
     setCurrentIndex(index);
   };
 
-  const _handleNext = (currentIndex) => {
+  const _handleNext = (): void => {
     setCurrentIndex(currentIndex + 1);
   };
 
-  const _handleComplete = () => {};
+  const _handleComplete = (): void => {};
 
   return (
     <div className="App flex w-full">

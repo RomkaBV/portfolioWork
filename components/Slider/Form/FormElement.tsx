@@ -1,15 +1,19 @@
 import React from "react";
 import "./style.css";
 
+interface FormElementProps {
+  name: string;
+  onClick: () => void;
+  value: string;
+}
 
-const FormElement = ({ name, onClick, value }
-  ) => {
+const FormElement: React.FC<FormElementProps> = ({ name, onClick, value }) => {
   return (
     <div>
       <h3>{name}</h3>
       <input
         className="btn-primary"
-        type={"button"}
+        type="button"
         value={value}
         onClick={onClick}
       />

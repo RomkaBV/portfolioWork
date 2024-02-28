@@ -3,7 +3,7 @@
 }
 
 .example-mark.example-mark-active {
-  background: url(../../../public//sliderIcon.png) no-repeat center center;
+  background: url(../../../public/sliderIcon.png) no-repeat center center;
   width: 49px;
   height: 23px;
 }

@@ -1,6 +1,5 @@
 "use client";
 import TheStep from "./TheStep";
-import TheTestStep from "../../components/Slider/Step.tsx";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
