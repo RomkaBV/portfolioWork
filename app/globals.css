@@ -247,6 +247,17 @@ body {
   background-size: contain;
 }
 
+/** How it Works */
+.whatwedo-bg {
+  background: url(../public/possible-WhatweDo.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 body::-webkit-scrollbar {
   display: none;
+}
+.active {
+  color: #f8ba53;
 }

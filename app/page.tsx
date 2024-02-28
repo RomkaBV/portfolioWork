@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Particle from "./components/Particle";
+import Particle from "./header/Particle";
 import TheHero from "./Home/TheHero";
 import ThePossible from "./Home/ThePossible";
 import ThePotencial from "./Home/ThePotencial";

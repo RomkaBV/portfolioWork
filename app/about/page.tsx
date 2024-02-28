@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Particle from "../components/Particle";
+import Particle from "../header/Particle";
 import Image from "next/image";
 import TheOurMission from "./TheOurMission";
 import TheTeam from "./TheTeam";
