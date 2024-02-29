@@ -10,7 +10,7 @@ interface FormElementProps {
 const FormElement: React.FC<FormElementProps> = ({ name, onClick, value }) => {
   return (
     <div>
-      <h3>{name}</h3>
+      <h3></h3>
       <input
         className="btn-primary"
         type="button"

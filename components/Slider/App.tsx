@@ -3,6 +3,7 @@ import { useState } from "react";
 import Step from "./Step";
 import Slider from "./Slider/page";
 import Form from "./Form/page";
+import { Manufactures } from "@/constants";
 import "./styles.css";
 
 export default function App(): JSX.Element {
@@ -19,26 +20,35 @@ export default function App(): JSX.Element {
   const _handleComplete = (): void => {};
 
   return (
-    <div className="App flex w-full">
-      <div className="container w-1/4">
+    <div className=" App flex-col-reverse lg:flex-row" data-aos="zoom-out">
+      <div className="max-w-[200px]">
         <Step currentIndex={currentIndex} />
       </div>
-      <div className=" w-14">
-        <Slider onChange={_handleIndexChange} currentIndex={currentIndex} />
-      </div>
-      <div className="form-container w-1/2">
-        <Form
-          currentIndex={currentIndex}
-          handleNext={_handleNext}
-          handleComplete={_handleComplete}
-        />
-      </div>
-      <div className="form-container w-1/2 flex">
-        <Form
-          currentIndex={currentIndex}
-          handleNext={_handleNext}
-          handleComplete={_handleComplete}
-        />
+
+      <div className="flex flex-row">
+        <div className="form-container  flex ">
+          <Slider onChange={_handleIndexChange} currentIndex={currentIndex} />
+          <div className="flex md:flex-row flex-col">
+            <div className="form-container md:ml-8 ml-0   ">
+              <Form
+                currentIndex={currentIndex}
+                handleNext={_handleNext}
+                handleComplete={_handleComplete}
+              />
+            </div>
+            <div className="form-container ">
+              <iframe
+                width="100%"
+                height="100%"
+                src={Manufactures[currentIndex].youTube}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

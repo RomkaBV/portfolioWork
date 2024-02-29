@@ -11,7 +11,8 @@
 }
 
 .form-container {
-  width: 50%;
+  height: 100%;
+  width: 500px;
 }
 
 .steps-container {
@@ -22,11 +23,11 @@
 
 .steps-item {
   padding: 5px;
-  min-height: 80px;
+  min-height: 50px;
 }
 
 .vertical-slider {
-  height: 380px;
-  width: 25%;
+  height: 280px;
+  width: 5%;
   /* border: 1px solid grey; */
 }

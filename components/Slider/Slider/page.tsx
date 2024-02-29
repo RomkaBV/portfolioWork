@@ -11,7 +11,7 @@ interface SliderProps {
 const Slider: React.FC<SliderProps> = ({ onChange, currentIndex }) => {
   return (
     <ReactSlider
-      className="vertical-slider"
+      className="vertical-slider mx-2 relative"
       markClassName="example-mark"
       onChange={onChange}
       trackClassName="example-track"
@@ -21,12 +21,14 @@ const Slider: React.FC<SliderProps> = ({ onChange, currentIndex }) => {
       max={4}
       marks
       renderMark={(props) => {
-        if (parseInt(props.key as string) < currentIndex) {
-          props.className = "example-mark example-mark-completed";
-        } else if (props.key === currentIndex) {
-          props.className = "example-mark example-mark-active";
+        const markClassNames = ["example-mark "];
+        if (Number(props.key) < currentIndex) {
+          markClassNames.push("example-mark-completed");
+        } else if (Number(props.key) === currentIndex) {
+          markClassNames.push("example-mark-active");
         }
-        return <span {...props} />;
+        const classNames = markClassNames.join(" ");
+        return <div {...props} className={classNames} />;
       }}
       orientation="vertical"
     />

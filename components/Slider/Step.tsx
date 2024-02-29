@@ -16,14 +16,14 @@ const steps: string[] = [
 
 const Step: React.FC<StepProps> = ({ currentIndex }) => {
   return (
-    <div className="steps-container w-36">
+    <div className="steps-container">
       {steps.map((step, index) => {
         let color = currentIndex === index ? "#ffffff" : "grey";
 
         return (
           <div
             key={index}
-            className="steps-item flex items-center gap-x-3 cursor-pointer"
+            className=" flex items-center gap-x-3 cursor-pointer text-wrap"
           >
             <div className="bg-[#2E2931] text-white rounded-full">
               <h2
