@@ -38,8 +38,8 @@ export default function App(): JSX.Element {
             </div>
             <div className="form-container ">
               <iframe
-                width="100%"
-                height="100%"
+                width="400px"
+                height="270px"
                 src={Manufactures[currentIndex].youTube}
                 title="YouTube video player"
                 frameBorder="0"
