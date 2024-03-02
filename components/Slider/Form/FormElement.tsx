@@ -12,7 +12,7 @@ const FormElement: React.FC<FormElementProps> = ({ name, onClick, value }) => {
     <div>
       <h3></h3>
       <input
-        className="btn-primary"
+        className="btn-primary px-5"
         type="button"
         value={value}
         onClick={onClick}

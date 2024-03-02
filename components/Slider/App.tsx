@@ -19,24 +19,27 @@ export default function App(): JSX.Element {
 
   const _handleComplete = (): void => {};
 
+  const test = (evt: number | string): void => {
+    setCurrentIndex(+evt);
+  };
   return (
-    <div className=" App flex-col-reverse lg:flex-row" data-aos="zoom-out">
+    <div className=" App flex-col-reverse  lg:flex-row" data-aos="zoom-out">
       <div className="max-w-[200px]">
-        <Step currentIndex={currentIndex} />
+        <Step currentIndex={currentIndex} test={test} />
       </div>
 
       <div className="flex flex-row">
         <div className="form-container  flex ">
           <Slider onChange={_handleIndexChange} currentIndex={currentIndex} />
-          <div className="flex md:flex-row flex-col">
-            <div className="form-container md:ml-8 ml-0   ">
+          <div className="flex md:flex-col gap-5 items-center  lg:flex-row">
+            <div className="form-container">
               <Form
                 currentIndex={currentIndex}
                 handleNext={_handleNext}
                 handleComplete={_handleComplete}
               />
             </div>
-            <div className="form-container ">
+            <div className="form-container pr-5">
               <iframe
                 width="400px"
                 height="270px"

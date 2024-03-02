@@ -4,6 +4,7 @@ import React from "react";
 
 interface StepProps {
   currentIndex: number;
+  test: () => void;
 }
 
 const steps: string[] = [
@@ -14,16 +15,16 @@ const steps: string[] = [
   "Launch Products to your store",
 ];
 
-const Step: React.FC<StepProps> = ({ currentIndex }) => {
+const Step: React.FC<StepProps> = ({ currentIndex, test }) => {
   return (
-    <div className="steps-container">
+    <div className="steps-container ">
       {steps.map((step, index) => {
         let color = currentIndex === index ? "#ffffff" : "grey";
 
         return (
           <div
             key={index}
-            className=" flex items-center gap-x-3 cursor-pointer text-wrap"
+            className=" flex items-center gap-x-3 cursor-pointer text-wrap "
           >
             <div className="bg-[#2E2931] text-white rounded-full">
               <h2
@@ -36,15 +37,17 @@ const Step: React.FC<StepProps> = ({ currentIndex }) => {
                 {index + 1}
               </h2>
             </div>
-            <h3
-              className="pl-2"
+            <button
+              value={index}
+              className="pl-2 text-left"
+              onClick={(evt) => test(evt.currentTarget.value)}
               style={{
                 margin: 0,
                 color: color,
               }}
             >
               {step}
-            </h3>
+            </button>
           </div>
         );
       })}

@@ -43,21 +43,22 @@ const Form: React.FC<FormProps> = ({
       </p>
 
       <div className="flex items-center mt-4 gap-4">
-        {currentIndex === formEls.length - 1 ? (
+        {currentIndex === Manufactures.length - 1 ? (
           <FormElement
-            name={formEls[currentIndex]}
-            value={"Complete"}
+            name={Manufactures[currentIndex].title}
+            value={"Sign Up Free"}
             onClick={() => handleComplete(currentIndex)}
           />
         ) : (
           <FormElement
-            name={formEls[currentIndex]}
+            name={Manufactures[currentIndex].title}
             value={"Next"}
             onClick={() => handleNext(currentIndex)}
           />
         )}
-
-        <Link href={Manufactures[0].url}>Sign Up Free</Link>
+        {currentIndex < 4 && (
+          <Link href={Manufactures[0].url}>Sign Up Free</Link>
+        )}
       </div>
     </div>
   );
