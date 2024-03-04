@@ -4,7 +4,7 @@ import React from "react";
 
 interface StepProps {
   currentIndex: number;
-  test: () => void;
+  test: (value: number) => void;
 }
 
 const steps: string[] = [
@@ -40,7 +40,7 @@ const Step: React.FC<StepProps> = ({ currentIndex, test }) => {
             <button
               value={index}
               className="pl-2 text-left"
-              onClick={(evt) => test(evt.currentTarget.value)}
+              onClick={(evt) => test(+evt.currentTarget.value)}
               style={{
                 margin: 0,
                 color: color,
