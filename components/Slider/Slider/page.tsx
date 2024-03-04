@@ -28,7 +28,7 @@ const Slider: React.FC<SliderProps> = ({ onChange, currentIndex }) => {
           markClassNames.push("example-mark-active");
         }
         const classNames = markClassNames.join(" ");
-        return <div {...props} className={classNames} />;
+        return <div {...props} key={props.key} className={classNames} />;
       }}
       orientation="vertical"
     />
