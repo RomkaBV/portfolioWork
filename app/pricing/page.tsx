@@ -25,7 +25,7 @@ export default function Page() {
       <main className="pricing-bg py-28 relative">
         <div className="bg-gradient-to-t from-[#140E18]  to-[#140E1800] absolute bottom-0  w-full h-[200px]"></div>
         <div className="pricing-gradient absolute top-0 w-full h-[600px] z-10"></div>
-        <div className="max-w-[1280px] m-auto flex flex-col items-center relative z-50">
+        <div className="custom-container flex flex-col items-center relative z-50">
           <div
             className="lg:w-[860px] text-center aos-init aos-animate"
             data-aos="fade-left"

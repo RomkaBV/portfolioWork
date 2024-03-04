@@ -23,15 +23,15 @@ export default function App(): JSX.Element {
     setCurrentIndex(+evt);
   };
   return (
-    <div className=" App flex-col-reverse  lg:flex-row" data-aos="zoom-out">
-      <div className="max-w-[200px]">
+    <div className=" App flex-col-reverse  md:flex-row " data-aos="zoom-out">
+      <div className="max-w-52">
         <Step currentIndex={currentIndex} test={test} />
       </div>
 
       <div className="flex flex-row">
-        <div className="form-container  flex ">
-          <Slider onChange={_handleIndexChange} currentIndex={currentIndex} />
-          <div className="flex md:flex-col gap-5 items-center  lg:flex-row">
+        <Slider onChange={_handleIndexChange} currentIndex={currentIndex} />
+        <div className="form-container  flex md:items-center lg:items-start">
+          <div className="flex flex-col gap-5 mb-10 lg:flex-row">
             <div className="form-container">
               <Form
                 currentIndex={currentIndex}
@@ -39,8 +39,9 @@ export default function App(): JSX.Element {
                 handleComplete={_handleComplete}
               />
             </div>
-            <div className="form-container pr-5">
+            <div className="form-container ">
               <iframe
+                className="max-w-full  pr-10 "
                 width="400px"
                 height="270px"
                 src={Manufactures[currentIndex].youTube}

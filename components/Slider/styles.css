@@ -10,11 +10,6 @@
   width: 25%;
 }
 
-.form-container {
-  height: 100%;
-  width: 500px;
-}
-
 .steps-container {
   display: flex;
   flex-direction: column;
@@ -30,4 +25,11 @@
   height: 280px;
   width: 5%;
   /* border: 1px solid grey; */
+}
+@media screen and (max-width: 768px) {
+  .vertical-slider {
+    height: 180px;
+    width: 5%;
+    /* border: 1px solid grey; */
+  }
 }

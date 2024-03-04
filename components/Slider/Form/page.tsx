@@ -25,7 +25,7 @@ const Form: React.FC<FormProps> = ({
   handleComplete,
 }) => {
   return (
-    <div className="form-container px-10">
+    <div className="form-container px-6  sm:pr-4  ">
       <h3 className="font-heroFont flex items-center gap-x-4">
         <span className=" font-heroFont bg-[#2E2931] text-white rounded-full text-base px-3 py-[8px]  ">
           {Manufactures[currentIndex].id}

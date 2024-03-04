@@ -12,8 +12,8 @@ export default function Page() {
     AOS.init({});
   }, []);
   return (
-    <>
-      <section className="about-bg ">
+    <main className="!overflow-hidden">
+      <section className="about-bg w-screen h-screen  ">
         <div className="bg-gradient-to-t from-[#140E18]  to-[#140E1800]">
           <div className="custom-container  h-full flex flex-row justify-between relative z-50 items-center pt-36 ">
             <Image
@@ -75,6 +75,6 @@ export default function Page() {
       <div className=" absolute right-0 top-0 h-full w-[80%] z-[-10]">
         <Particle />
       </div>
-    </>
+    </main>
   );
 }
