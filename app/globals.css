@@ -253,7 +253,6 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 body::-webkit-scrollbar {
@@ -261,4 +260,13 @@ body::-webkit-scrollbar {
 }
 .active {
   color: #f8ba53;
+}
+
+/** hidden-fee-bg */
+.hidden-fee-bg {
+  background: url(../public/no-hidden-fee-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

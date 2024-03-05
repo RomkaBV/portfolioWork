@@ -1,5 +1,6 @@
 "use client";
 import TheStep from "./TheStep";
+import TheQuestions from "./TheQuestions";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -92,6 +93,7 @@ export default function How_Works() {
       </section>
 
       <TheStep />
+      <TheQuestions />
       <div className=" absolute right-0 top-0 h-full w-[100%] -z-[-10]">
         <Particle />
       </div>
