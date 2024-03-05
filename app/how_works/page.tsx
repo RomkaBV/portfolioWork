@@ -15,9 +15,9 @@ export default function How_Works() {
 
   return (
     <main className="!overflow-hidden">
-      <section className="bg-gradient-to-t from-[#140E18]  to-[#140E1800] relative">
+      <section className="bg-gradient-to-t from-[#140E18]  to-[#140E1800] relative ">
         <div className="hero-bg ">
-          <div className="custom-container h-full flex justify-center pt-24 md:justify-between flex-col-reverse md:flex-row pb-12 md:pb-0">
+          <div className="custom-container relative z-20 h-full flex justify-center pt-24 md:justify-between flex-col-reverse md:flex-row pb-12 md:pb-0">
             <Image
               className="absolute top-0 left-0 w-1/2"
               src="/red-circle.png"
@@ -92,7 +92,7 @@ export default function How_Works() {
       </section>
 
       <TheStep />
-      <div className=" absolute right-0 top-0 h-full w-[100%] z-[-10]">
+      <div className=" absolute right-0 top-0 h-full w-[100%] -z-[-10]">
         <Particle />
       </div>
     </main>

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import Particle from "./header/Particle";
 import TheHero from "./Home/TheHero";
 import ThePossible from "./Home/ThePossible";
@@ -7,6 +5,7 @@ import ThePotencial from "./Home/ThePotencial";
 import TheHidden from "./Home/TheHidden";
 import TheMission from "./Home/TheMission";
 import TheContact from "./Home/TheContact";
+
 export default function Home() {
   return (
     <main className="!overflow-hidden">
